@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="nolan_resume.xslt"?>
+
+<Resume>
+  <Contact>
+    <FullName>Willy Nolan</FullName>
+    <Email>willy@willynolan.com</Email>
+  </Contact>
+
+  <TechnicalSkills>
+    <Programming>
+      <LanguageOrAPI>
+        <Name>Javascript</Name>
+      </LanguageOrAPI>
+
+      <LanguageOrAPI>
+        <Name>C++</Name>
+      </LanguageOrAPI>
+
+      <LanguageOrAPI>
+        <Name>OpenGL and WebGL</Name>
+      </LanguageOrAPI>
+
+      <LanguageOrAPI>
+        <Name>Python</Name>
+      </LanguageOrAPI>
+
+      <LanguageOrAPI>
+        <Name>HTML</Name>
+      </LanguageOrAPI>
+
+      <LanguageOrAPI>
+        <Name>CSS</Name>
+      </LanguageOrAPI>
+
+      <LanguageOrAPI>
+        <Name>NoSQL</Name>
+      </LanguageOrAPI>
+    </Programming>
+
+    <Applications>
+      <Application>
+        <Name>TouchDesigner</Name>
+      </Application>
+
+      <Application>
+        <Name>Blender</Name>
+      </Application>
+
+      <Application>
+        <Name>Max</Name>
+      </Application>
+
+      <Application>
+        <Name>Git</Name>
+      </Application>
+    </Applications>
+
+    <OtherComputerSkills>
+      <Skill>
+        <Name>Linux and Bash</Name>
+      </Skill>
+      <Skill>
+        <Name>Data formats</Name>
+        <Example>(XML, JSON, YAML etc.)</Example>
+      </Skill>
+      <Skill>
+        <Name>General networking protocols</Name>
+        <Example>(TCP/IP, SSH etc.)</Example>
+      </Skill>
+      <Skill>
+        <Name>Communication protocols</Name>
+        <Example>(DMX, MIDI etc.)</Example>
+      </Skill>
+      <Skill>
+        <Name>Experience with high-end displays and projectors</Name>
+      </Skill>
+      <Skill>
+        <Name>General computer hardware knowledge</Name>
+      </Skill>
+    </OtherComputerSkills>
+  </TechnicalSkills>
+
+  <RelevantExperience>
+    <Position>
+      <Title>Interactive Engineer</Title>
+      <Company>Obscura Digital</Company>
+      <Location>
+        <City>San Francisco</City>
+        <State>CA</State>
+      </Location>
+      <Dates>
+        <StartDate>June 2015</StartDate>
+        <EndDate>Present</EndDate>
+      </Dates>
+      <Highlights>
+        <Highlight>Write software to communicate with a variety of hardware used in large scale interactive installations</Highlight>
+        <Highlight>Design and develop GUIs for external and internal use</Highlight>
+        <Highlight>Assist in the development of internal projects focusing on tools for camera-projector calibration</Highlight>
+        <Highlight>Work to improve internal documentation and standardize software development practices</Highlight>
+      </Highlights>
+    </Position>
+    
+    <Position>
+      <Title>Interactive Developer</Title>
+      <Company>Madrone Studios</Company>
+      <Location>
+        <City>San Francisco</City>
+        <State>CA</State>
+      </Location>
+      <Dates>
+        <StartDate>March 2014</StartDate>
+        <EndDate>June 2015</EndDate>
+      </Dates>
+      <Highlights>
+        <Highlight>Designed, developed and installed large-scale visual and interactive art installations</Highlight>
+        <Highlight>Worked with clients to produce computer art projects locally and internationally</Highlight>
+        <Highlight>Incorporated a variety of social media and proprietary APIs to display content in live and pre-rendered playback systems</Highlight>
+      </Highlights>
+    </Position>
+
+    <Position>
+      <Title>Software Developer</Title>
+      <Company>NightWalker Clothing</Company>
+      <Location>
+        <City>Portland</City>
+        <State>OR</State>
+      </Location>
+      <Dates>
+        <StartDate>August 2013</StartDate>
+        <EndDate>March 2014</EndDate>
+      </Dates>
+      <Highlights>
+        <Highlight>Wrote the entire codebase for the company's flagship MEAN stack application</Highlight>
+        <Highlight>Integrated third-party libraries to support automated billing, shipping and inventory tracking</Highlight>
+        <Highlight>Handled application deployment, monitoring and maintenance</Highlight>
+      </Highlights>
+    </Position>
+  </RelevantExperience>
+
+  <Education>
+    <School>
+      <Name>USC Annenberg School for Communication</Name>
+      <Degree>M.S. Journalism</Degree>
+      <Graduation>2013</Graduation>
+    </School>
+
+    <School>
+      <Name>Portland State University</Name>
+      <Degree>B.S. Communication Studies</Degree>
+      <Graduation>2010</Graduation>
+    </School>
+  </Education>
+
+  <Interests>
+    <Interest>Electronic music production</Interest>
+    <Interest>Interaction design</Interest>
+    <Interest>Travel</Interest>
+  </Interests>
+</Resume>
