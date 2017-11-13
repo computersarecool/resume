@@ -3,7 +3,7 @@
 *My resume*
 
 ### Overview
-This is my personal resume. 
+This is my resume. 
 
 The resume is written in XML because I wanted a project to use as an exercise to explore XML and XSLT.
 
