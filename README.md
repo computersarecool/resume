@@ -13,7 +13,7 @@ It is meant to be displayed as a webpage or as a PDF.  The `nolan_resume.xslt` f
 - Use the link here: [`nolan_resume.xml`](https://cdn.rawgit.com/computersarecool/resume/master/nolan_resume.xml) and press `Ctl-p` to print as `.pdf`
 
 ### To build locally:
-- Open [`nolan_resume.xml`](nolan_resume.xml) in a web browser. (You may need to run a local webserver in order to have the styling applied correctly)
+- Clone the repo and open `nolan_resume.xml` in a web browser. (You may need to run a local webserver in order to have the styling applied correctly)
 - Press `Ctl-p` to print as `.pdf`
 
 ### License
