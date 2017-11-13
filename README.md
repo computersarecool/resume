@@ -1,6 +1,6 @@
 # Resume
 
-*My personal resume*
+*My resume*
 
 ### Overview
 This is my personal resume. 
