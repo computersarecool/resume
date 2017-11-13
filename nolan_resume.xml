@@ -32,19 +32,11 @@
       <LanguageOrAPI>
         <Name>CSS</Name>
       </LanguageOrAPI>
-
-      <LanguageOrAPI>
-        <Name>NoSQL</Name>
-      </LanguageOrAPI>
     </Programming>
 
     <Applications>
       <Application>
         <Name>TouchDesigner</Name>
-      </Application>
-
-      <Application>
-        <Name>Blender</Name>
       </Application>
 
       <Application>
@@ -61,11 +53,7 @@
         <Name>Linux and Bash</Name>
       </Skill>
       <Skill>
-        <Name>Data formats</Name>
-        <Example>(XML, JSON, YAML etc.)</Example>
-      </Skill>
-      <Skill>
-        <Name>General networking protocols</Name>
+        <Name>General networking</Name>
         <Example>(TCP/IP, SSH etc.)</Example>
       </Skill>
       <Skill>
@@ -73,10 +61,11 @@
         <Example>(DMX, MIDI etc.)</Example>
       </Skill>
       <Skill>
-        <Name>Experience with high-end displays and projectors</Name>
+        <Name>Data formats</Name>
+        <Example>(XML, JSON, YAML etc.)</Example>
       </Skill>
       <Skill>
-        <Name>General computer hardware knowledge</Name>
+        <Name>Experience with commodity and high-end graphics cards, displays and projectors</Name>
       </Skill>
     </OtherComputerSkills>
   </TechnicalSkills>
@@ -94,15 +83,15 @@
         <EndDate>Present</EndDate>
       </Dates>
       <Highlights>
-        <Highlight>Write software to communicate with a variety of hardware used in large scale interactive installations</Highlight>
-        <Highlight>Design and develop GUIs for external and internal use</Highlight>
-        <Highlight>Assist in the development of internal projects focusing on tools for camera-projector calibration</Highlight>
+        <Highlight>Write code used in a variety of very large scale interactive installations</Highlight>
+        <Highlight>Research new technologies and develop tools for camera-projector calibration</Highlight>
+        <Highlight>Design and develop graphical user interfaces</Highlight>
         <Highlight>Work to improve internal documentation and standardize software development practices</Highlight>
       </Highlights>
     </Position>
     
     <Position>
-      <Title>Interactive Developer</Title>
+      <Title>Software Engineer</Title>
       <Company>Madrone Studios</Company>
       <Location>
         <City>San Francisco</City>
@@ -113,14 +102,14 @@
         <EndDate>June 2015</EndDate>
       </Dates>
       <Highlights>
-        <Highlight>Designed, developed and installed large-scale visual and interactive art installations</Highlight>
-        <Highlight>Worked with clients to produce computer art projects locally and internationally</Highlight>
-        <Highlight>Incorporated a variety of social media and proprietary APIs to display content in live and pre-rendered playback systems</Highlight>
+        <Highlight>Designed, developed and installed large-scale visual and interactive installations</Highlight>
+        <Highlight>Interfaced with a variety of social media and proprietary APIs to create content for live and pre-rendered playback systems</Highlight>
+        <Highlight>Implemented client requests in realtime situations locally and internationally</Highlight>
       </Highlights>
     </Position>
 
     <Position>
-      <Title>Software Developer</Title>
+      <Title>Software Engineer</Title>
       <Company>NightWalker Clothing</Company>
       <Location>
         <City>Portland</City>
@@ -132,7 +121,7 @@
       </Dates>
       <Highlights>
         <Highlight>Wrote the entire codebase for the company's flagship MEAN stack application</Highlight>
-        <Highlight>Integrated third-party libraries to support automated billing, shipping and inventory tracking</Highlight>
+        <Highlight>Programmed systems to support automated billing, shipping and inventory tracking</Highlight>
         <Highlight>Handled application deployment, monitoring and maintenance</Highlight>
       </Highlights>
     </Position>
@@ -140,7 +129,7 @@
 
   <Education>
     <School>
-      <Name>USC Annenberg School for Communication</Name>
+      <Name>The University of Southern California</Name>
       <Degree>M.S. Journalism</Degree>
       <Graduation>2013</Graduation>
     </School>
@@ -153,8 +142,8 @@
   </Education>
 
   <Interests>
-    <Interest>Electronic music production</Interest>
-    <Interest>Interaction design</Interest>
+    <Interest>Sound synthesis</Interest>
     <Interest>Travel</Interest>
+    <Interest>Pop culture of the 1980s</Interest>
   </Interests>
 </Resume>
