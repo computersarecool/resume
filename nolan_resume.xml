@@ -65,7 +65,7 @@
         <Example>(XML, JSON, YAML etc.)</Example>
       </Skill>
       <Skill>
-        <Name>Experience with commodity and high-end graphics cards, displays and projectors</Name>
+        <Name>Experience with high-end graphics cards, displays and projectors</Name>
       </Skill>
     </OtherComputerSkills>
   </TechnicalSkills>
@@ -83,9 +83,9 @@
         <EndDate>Present</EndDate>
       </Dates>
       <Highlights>
-        <Highlight>Write code used in a variety of very large scale interactive installations</Highlight>
+        <Highlight>Write code for some of the biggest interactive installations and audio-visual events in the world</Highlight>
         <Highlight>Research new technologies and develop tools for camera-projector calibration</Highlight>
-        <Highlight>Design and develop graphical user interfaces</Highlight>
+        <Highlight>Design and develop client-facing graphical user interfaces</Highlight>
         <Highlight>Work to improve internal documentation and standardize software development practices</Highlight>
       </Highlights>
     </Position>
@@ -103,8 +103,8 @@
       </Dates>
       <Highlights>
         <Highlight>Designed, developed and installed large-scale visual and interactive installations</Highlight>
-        <Highlight>Interfaced with a variety of social media and proprietary APIs to create content for live and pre-rendered playback systems</Highlight>
-        <Highlight>Implemented client requests in realtime situations locally and internationally</Highlight>
+        <Highlight>Provided technical guidance during concept design and content creation</Highlight>
+        <Highlight>Created real time solutions to client requests on projects locally and internationally</Highlight>
       </Highlights>
     </Position>
 
@@ -121,7 +121,7 @@
       </Dates>
       <Highlights>
         <Highlight>Wrote the entire codebase for the company's flagship MEAN stack application</Highlight>
-        <Highlight>Programmed systems to support automated billing, shipping and inventory tracking</Highlight>
+        <Highlight>Coded a content-rich, responsive web application</Highlight>
         <Highlight>Handled application deployment, monitoring and maintenance</Highlight>
       </Highlights>
     </Position>
