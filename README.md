@@ -12,7 +12,7 @@ It is meant to be displayed as a webpage or as a PDF.
 `nolan_resume.xslt` transforms the XML into HTML and `nolan_resume.css` styles that.
 
 ### To view the rendered resume:
-- Use the link here: [`nolan_resume.xml`](https://cdn.rawgit.com/computersarecool/resume/master/nolan_resume.xml) and press `Ctl-p` to print / save as `.pdf`
+- Use the link here: [`nolan_resume.xml`](https://cdn.rawgit.com/computersarecool/resume/e2cb6dc5bdc651a674765b61d5633a924d2d529b/nolan_resume.xml) and press `Ctl-p` to print / save as `.pdf`
 
 ### To view locally:
 - Clone the repo and open `nolan_resume.xml` in a web browser. (You may need to run a local webserver in order to have the styling applied correctly)
