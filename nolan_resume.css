@@ -94,7 +94,11 @@ div.education {
   }
 
   section, div {
-    margin-bottom: 1em;
+    margin-bottom: 1.2em;
+  }
+
+  .contact {
+    margin-bottom: 2em;
   }
 
   .experience ul li {
@@ -102,9 +106,14 @@ div.education {
   }
 
   div.education {
-    margin-bottom: 0.3em;
+    margin-bottom: 1em;
   }
 
+  .interests p {
+    display: block;
+  }
+
+/*
   .interests p {
     display: inline;
   }
@@ -116,4 +125,5 @@ div.education {
   .interests p:last-child::after {
     content: ""
   }
+*/
 }
