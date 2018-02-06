@@ -2,8 +2,8 @@
 
 *My resume*
 
-### Overview
-This is my resume. 
+## What this repo is:
+This repo contains my resume. 
 
 The resume data is written in XML because I wanted a project to use as an exercise to explore XML and XSLT.
 
@@ -22,4 +22,3 @@ It is meant to be displayed as a webpage or as a PDF.
 :copyright: Willy Nolan 2017
 
 [MIT License](LICENSE.txt)
-
