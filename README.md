@@ -4,10 +4,10 @@
 ## Description
 This repo contains my resume. It is meant to be displayed as a webpage or as a PDF.
 
-## To view the rendered resume:
+## To View The Rendered Resume:
 - Use the link here: [`nolan_resume.xml`](https://cdn.rawgit.com/computersarecool/resume/e2cb6dc5bdc651a674765b61d5633a924d2d529b/nolan_resume.xml) and press `Ctl-p` to print / save as `.pdf`
 
-## To view the resume locally:
+## To View The Resume Locally:
 - Clone the repo and open `nolan_resume.xml` in a web browser. NOTE: You may need to run a local webserver in order to have the styling applied correctly
 - Press `Ctl-p` to print / save as `.pdf`
 
