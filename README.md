@@ -5,12 +5,13 @@
 This repo contains my resume. It is meant to be displayed as a webpage or as a PDF.
 
 ## To View The Rendered Resume
-- Use the link here: [`nolan_resume.xml`](https://cdn.rawgit.com/computersarecool/resume/e2cb6dc5bdc651a674765b61d5633a924d2d529b/nolan_resume.xml) and press `Ctl-p` to print / save as `.pdf`
+- Use the link [`here`](https://willynolan.com/resume/resume.pdf)
 
 ## To View The Resume Locally
 - Clone the repo and open `nolan_resume.xml` in a web browser. 
 
 Note: You may need to run a local webserver in order to have the styling applied correctly
+
 - Press `Ctl-p` to print / save as `.pdf`
 
 ## Project Structure
@@ -25,4 +26,3 @@ I much prefer [other data formats](https://www.json.org/) but this is written in
 :copyright: Willy Nolan 2017
 
 [MIT License](LICENSE.txt)
-
