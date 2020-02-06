@@ -5,7 +5,7 @@
 This repo contains my resume. It is meant to be displayed as a webpage or as a PDF.
 
 ## To View The Rendered Resume
-- Use the link [`here`](https://willynolan.com/resume.pdf)
+- Use the link [`here`](https://willynolan.com/public/resume.pdf)
 
 ## To View The Resume Locally
 - Clone the repo and open `nolan_resume.xml` in a web browser. 
