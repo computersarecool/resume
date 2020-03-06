@@ -57,13 +57,15 @@
       <xsl:value-of select="FullName/text()" />
     </h1>
     <p>
-      <xsl:value-of select="Email/text()" /><xsl:text> </xsl:text><span class="redact"><xsl:value-of select="Phone/text()" /></span>
+      <xsl:value-of select="Email/text()" /><xsl:text> </xsl:text>
+    </p>
+    <p>
+      <span class="redact"><xsl:value-of select="Phone/text()" /></span>
     </p>
     <div class="redact">
       <p>
         <span><xsl:value-of select="Address/Street1/text()" /></span>
         <xsl:text> </xsl:text>
-        <span><xsl:value-of select="Address/Street2/text()" /></span>
       </p>
       <p>
         <span><xsl:value-of select="Address/City/text()" /></span>
@@ -149,7 +151,7 @@
       <p>
         <xsl:value-of select="Name/text()" />
       </p>
-      <p>
+      <p class="grad-details">
         <xsl:value-of select="Graduation/text()" />
       </p>
     </div>

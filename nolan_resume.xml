@@ -2,9 +2,14 @@
 <?xml-stylesheet type="text/xsl" href="nolan_resume.xslt"?>
 
 <Resume>
+
   <Contact>
     <FullName>Willy Nolan</FullName>
     <Email>willy@willynolan.com</Email>
+    <Address>
+      <City>San Francisco,</City>
+      <State>CA</State>
+    </Address>
   </Contact>
 
   <TechnicalSkills>
@@ -67,25 +72,25 @@
 
   <RelevantExperience>
     <Position>
-      <Title>Senior Software Engineer</Title>
+      <Title>Software Engineer</Title>
       <Company>The Madison Square Garden Company</Company>
       <Location>
         <City>San Francisco</City>
         <State>CA</State>
       </Location>
       <Dates>
-        <StartDate>May 2019</StartDate>
+        <StartDate>May 2018</StartDate>
         <EndDate>Present</EndDate>
       </Dates>
       <Highlights>
         <Highlight>Joined MSG upon its acquisition of Obscura Digital</Highlight>
-        <Highlight>Work on the content pipeline and write code for internal projects and research and development for the MSG sphere</Highlight>
+        <Highlight>Work on the content pipeline as well as research and development for the MSG sphere</Highlight>
       </Highlights>
     </Position>
 
     <Position>
       <Title>Software Engineer</Title>
-      <Company>Obscura Digital</Company>
+      <Company>Obscura Digital (Acquired by The Madison Square Garden Company)</Company>
       <Location>
         <City>San Francisco</City>
         <State>CA</State>
@@ -152,6 +157,7 @@
 
   <Interests>
     <Interest>Travel</Interest>
+    <Interest>Sound Synthesis</Interest>
     <Interest>Pop culture of the 1980s</Interest>
   </Interests>
 </Resume>
