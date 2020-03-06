@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 
+  <!--  Root template-->
   <xsl:template match="/">
     <html>
       <head>
@@ -38,7 +39,12 @@
           <h2>Education</h2>
           <xsl:apply-templates select="Resume/Education" />
         </section>
-        
+
+        <section class="projects">
+          <h2>Selected Projects</h2>
+          <xsl:apply-templates select="Resume/Projects" />
+        </section>
+
         <section class="interests">
           <h2>Interests</h2>
           <xsl:apply-templates select="Resume/Interests" />
@@ -48,25 +54,26 @@
     </html>
   </xsl:template>
 
-  <xsl:template match="Name">
-    <li><xsl:value-of select="text()" /></li>
-  </xsl:template>
-
+  <!--  Other templates-->
   <xsl:template match="Contact">
     <h1>
       <xsl:value-of select="FullName/text()" />
     </h1>
+
     <p>
       <xsl:value-of select="Email/text()" /><xsl:text> </xsl:text>
     </p>
+
     <p>
       <span class="redact"><xsl:value-of select="Phone/text()" /></span>
     </p>
+
     <div class="redact">
       <p>
         <span><xsl:value-of select="Address/Street1/text()" /></span>
         <xsl:text> </xsl:text>
       </p>
+
       <p>
         <span><xsl:value-of select="Address/City/text()" /></span>
         <xsl:text> </xsl:text>
@@ -91,6 +98,10 @@
     <ul>
       <xsl:apply-templates select="Application" />
     </ul>
+  </xsl:template>
+
+  <xsl:template match="Application">
+    <li><xsl:value-of select="Name/text()" /></li>
   </xsl:template>
 
   <xsl:template match="OtherComputerSkills">
@@ -120,9 +131,7 @@
         <xsl:value-of select="Company/text()" />
       </p>
       <p class="work-details">
-        <xsl:value-of select="Location/City/text()" />, <xsl:value-of select="Location/State/text()" />
-      </p>
-      <p class="work-details">
+        <xsl:value-of select="Location/City/text()" />, <xsl:value-of select="Location/State/text()" />.&#160;
         <xsl:value-of select="Dates/StartDate/text()" /> - <span><xsl:value-of select="Dates/EndDate/text()" /></span>
       </p>
       <xsl:apply-templates select="Highlights" />
@@ -149,12 +158,20 @@
         <xsl:value-of select="Degree/text()" />
       </p>
       <p>
-        <xsl:value-of select="Name/text()" />
-      </p>
-      <p class="grad-details">
-        <xsl:value-of select="Graduation/text()" />
+        <xsl:value-of select="Name/text()" />, <xsl:value-of select="Graduation/text()" />
       </p>
     </div>
+  </xsl:template>
+
+  <xsl:template match="Projects">
+    <ul>
+      <xsl:apply-templates select="Project" />
+      <li class="list-annotate">(all documented at willynolan.com)</li>
+    </ul>
+  </xsl:template>
+
+  <xsl:template match="Project">
+    <li><xsl:value-of select="text()" /></li>
   </xsl:template>
 
   <xsl:template match="Interests">

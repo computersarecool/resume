@@ -52,15 +52,11 @@ p.title, p.degree {
   font-weight: 600;
 }
 
-.experience ul li {
-  margin-bottom: 1em;
-}
-
 div.education {
   margin-bottom: 1.4em;
 }
 
-p.grad-details {
+p.grad-details, li.list-annotate {
   font-size: 0.65em;
 }
 
@@ -105,6 +101,10 @@ p.grad-details {
 
   div.education {
     margin-bottom: 1em;
+  }
+
+  p.selected-projects {
+    margin-right: 18em;
   }
 
   .interests p {
