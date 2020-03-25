@@ -5,8 +5,8 @@
 This repo contains my resume. It is meant to be displayed as a web page or as a PDF.
 
 ## To View My Resume Online
-- As a web page use [`this link`](https://computersarecool.github.io/resume/nolan_resume.xml)
-- As a PDF use [`this link`](https://willynolan.com/public/nolan_resume.pdf)
+- As a web page use [`this link`](https://resume.willynolan.com/nolan_resume.xml)
+- As a PDF use [`this link`](https://resume.willynolan.com)
 
 ## To View My Resume Locally
 - Clone the repo and open the `nolan_resume.xml` file in a web browser. 
