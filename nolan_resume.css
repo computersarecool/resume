@@ -1,121 +1,188 @@
 /* Reset */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
-
-/* Styling */
-html {
-  margin: 0.4em .4em 0 1.1em;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline
 }
 
-h1 {
-  font-weight: 700;
-  font-size: 1.8em;
-  margin-bottom: 0.2em;
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block
 }
 
-section, div {
-  margin-bottom: 2em;
+/* Styles specific to this document */
+:root {
+    --main-font-color: #616161;
+    --secondary-font-color: #525252;
+    --date-space: .6ch;
+    --section-margin-bottom: 9pt;
+    --in-section-margin-bottom: 4.5pt;
 }
 
-h2 {
-  float: right;
-  text-transform: uppercase;
-  font-family: "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
-  font-weight: 600;
-  font-size: 0.9em;
-  color: #9c9b9b;
+.no-display {
+    display: none;
 }
 
-p, li {
-  font-size: 0.8em;
-  margin-bottom: 0.5em;
+a {
+    text-decoration: none;
+    color: var(--main-font-color);
 }
 
-li span {
-  font-size: 0.8em;
+ol, ul {
+    list-style-type: none;
 }
 
-p.work-details {
-  font-size: 0.65em;
+/* Default (print) styles */
+body {
+    height: 11in;
+    width: 8.5in;
+    font-size: 9pt;
+    line-height: 1.35;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: var(--main-font-color);
+    display: grid;
+    grid-template-columns: 0 repeat(3, 1fr) 0;
+    grid-template-rows: .4fr repeat(3, 1fr) .4fr;
+    grid-column-gap: 2.25em;
+    grid-template-areas:
+    ". . . . ."
+    ". . experience skills ."
+    ". about experience education ."
+    ". . experience projects ."
+    ". . . . .";
 }
 
-p.work-details:last-of-type {
-  margin-bottom: 1em;
+.about {
+    grid-area: about;
 }
 
-p.title.work-details, p.degree {
-  font-size: 0.9em;
-  margin-bottom: 0.4em;
+.experience {
+    grid-area: experience;
 }
 
-p.title, p.degree {
-  font-weight: 600;
+.education {
+    grid-area: education;
 }
 
-div.education {
-  margin-bottom: 1.4em;
+.projects {
+    grid-area: projects;
 }
 
-p.grad-details, li.list-annotate {
-  font-size: 0.65em;
+.skills {
+    grid-area: skills;
 }
 
-@media screen and (min-width: 49em) {
-  body {
-    max-width: 1200px;
-    font-size: 1.2em;
-    margin: 1.5em auto;
-  }
-
-  h2 {
-    margin-right: 20em;
-    font-size: 1em;
-  }
+.heading {
+    font-size: 18pt;
+    font-weight: 700;
+    text-transform: lowercase;
+    border-bottom: 2.25pt solid var(--main-font-color);
+    margin-top: 3.75pt;
+    margin-bottom: 12pt;
+    padding-bottom: 1.5pt;
 }
 
+.second-heading {
+    font-weight: 600;
+    color: var(--secondary-font-color);
+}
+
+.street-name {
+    display: block;
+}
+
+.state-name, .degree-name, .skill-example {
+    display: inline-block;
+    margin-right: var(--date-space);
+}
+
+.school, .multi-element {
+    margin-bottom: var(--section-margin-bottom);
+}
+.work-location, .degree {
+     margin-bottom: var(--in-section-margin-bottom);
+}
+
+.styled-list {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.list-annotate {
+    margin-left: 11pt;
+    margin-top: 3.75pt;
+}
+
+.city-name::after, .degree-name::after {
+    content: ", ";
+}
+
+.start-date::after {
+    content: " - ";
+}
+
+.job-highlight::after {
+    content: ".";
+}
+
+.email::before {
+    content: "E: ";
+}
+
+/*.phone::before {*/
+/*    content: "C: ";*/
+/*}*/
+
+/* Hide extra text when printing */
 @page {
-  size: auto;
-  margin: 0;
+    size: auto;
+    margin: 0;
 }
 
-@media print {
-  body {
-    margin: 5mm 0 0 15mm;
-  }
 
-  h2 {
-    margin-right: 2em;
-  }
+@media screen {
+    body {
+        margin: 2.5em auto;
+        height: auto;
+        width: 80%;
+        max-width: 930px;
+        font-size: .85em;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: .2fr repeat(2, 1fr) auto;
+        grid-template-areas:
+        "about about"
+        "experience skills"
+        "experience education"
+        "experience projects";
+    }
 
-  section, div {
-    margin-bottom: 1.1em;
-  }
+    a {
+        color: blue;
+    }
 
-  .contact {
-    margin-bottom: 1.5em;
-  }
+    .heading {
+        font-size: 2em;
+        border-bottom: 5px solid var(--main-font-color);
+        margin-top: .5em;
+        margin-bottom: 1em;
+        padding-bottom: 0;
+    }
 
-  .experience ul li {
-    margin-bottom: 0.3em;
-  }
+    .list-annotate {
+        margin-left: 1em;
+        margin-top: .5em;
+    }
+}
 
-  div.education {
-    margin-bottom: 1em;
-  }
-
-  p.selected-projects {
-    margin-right: 18em;
-  }
-
-  .interests p {
-    display: inline;
-  }
-
-  .interests p::after {
-    content: ","
-  }
-
-  .interests p:last-child::after {
-    content: ""
-  }
+@media only screen and (min-width: 950px) {
+    body {
+        grid-template-columns: 0 repeat(3, 1fr) 0;
+        grid-template-rows: repeat(2, 1fr) auto;
+        grid-column-gap: 2.25em;
+        grid-template-areas:
+        ". . experience skills ."
+        ". about experience education ."
+        ". . experience projects ."
+    }
 }

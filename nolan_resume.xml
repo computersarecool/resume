@@ -1,172 +1,220 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="nolan_resume.xslt"?>
 
-<!--To add redacted information add <Phone> under <Contact> and <Street1> and <Zip> under <Contact/Address>-->
-
 <Resume>
+    <!--  Personal Summary  -->
+    <Summary>
+        I am Software Engineer who has worked on a variety of projects all over the world.
+        My passions include computational perception and robotics and making things work.
+    </Summary>
 
-  <Contact>
-    <FullName>Willy Nolan</FullName>
-    <Email>willy@willynolan.com</Email>
-    <Address>
-      <City>San Francisco,</City>
-      <State>CA</State>
-    </Address>
-  </Contact>
+    <!--  Interests  -->
+    <Interests>
+        <Interest>Sound synthesis</Interest>
+        <Interest>Pop culture of the 1980s</Interest>
+        <Interest>Travel</Interest>
+    </Interests>
 
-  <TechnicalSkills>
-    <Programming>
-      <LanguageOrAPI>
-        <Name>Python</Name>
-      </LanguageOrAPI>
+    <!--  Projects  -->
+    <Projects>
+        <Project>Show control system at AT&amp;T Stadium</Project>
+        <Project>Social Canvas at MGM Cotai</Project>
+        <Project>Video projections at Shantou University</Project>
+    </Projects>
 
-      <LanguageOrAPI>
-        <Name>Javascript</Name>
-      </LanguageOrAPI>
+    <!--  Contact  -->
+    <Contact>
+        <FullName>Willy Nolan</FullName>
+        <Email>willy@willynolan.com</Email>
+        <Phone></Phone>
+        <Address>
+            <Street></Street>
+            <City>Los Angeles</City>
+            <State>CA</State>
+            <Zip>94110</Zip>
+        </Address>
+    </Contact>
 
-      <LanguageOrAPI>
-        <Name>C++ and C#</Name>
-      </LanguageOrAPI>
+    <!--  Education  -->
+    <Education>
+        <School>
+            <Name>Georgia Institute of Technology</Name>
+            <Degree>M.S. Computer Science</Degree>
+            <Graduation>2020</Graduation>
+            <Summary>
+                Specialization in Computational Perception and Robotics.
+                Studied machine learning and computer vision as it applies to robotics, signal processing,
+                finance and art.
+            </Summary>
+        </School>
 
-      <LanguageOrAPI>
-        <Name>OpenGL and WebGL</Name>
-      </LanguageOrAPI>
+        <School>
+            <Name>The University of Southern California</Name>
+            <Degree>M.S. Journalism</Degree>
+            <Graduation>2013</Graduation>
+            <Summary>
+                Specialization in Broadcast and Digital Journalism.
+                Made extensive use of web technologies for journalism.
+            </Summary>
+        </School>
 
-      <LanguageOrAPI>
-        <Name>HTML and CSS</Name>
-      </LanguageOrAPI>
-    </Programming>
+        <School>
+            <Name>Portland State University</Name>
+            <Degree>B.S. Communication Studies</Degree>
+            <Graduation>2010</Graduation>
+            <Summary>
+                Studied social media and emerging communication technology.
+            </Summary>
+        </School>
+    </Education>
 
-    <Applications>
-      <Application>
-        <Name>TouchDesigner</Name>
-      </Application>
+    <Skills>
+        <!--  Programming Skills  -->
+        <Software>
+            <Skill>
+                <Name>Python</Name>
+            </Skill>
 
-      <Application>
-        <Name>Unity</Name>
-      </Application>
+            <Skill>
+                <Name>Javascript</Name>
+            </Skill>
 
-      <Application>
-        <Name>Git</Name>
-      </Application>
-    </Applications>
+            <Skill>
+                <Name>C++ and C#</Name>
+            </Skill>
 
-    <OtherComputerSkills>
-      <Skill>
-        <Name>Linux and Bash</Name>
-      </Skill>
+            <Skill>
+                <Name>OpenGL and WebGL</Name>
+            </Skill>
 
-      <Skill>
-        <Name>Computer networking and communication protocols</Name>
-        <Example>(TCP/IP, SSH, MIDI, DMX, etc.)</Example>
-      </Skill>
+            <Skill>
+                <Name>HTML and CSS</Name>
+            </Skill>
+        </Software>
 
-      <Skill>
-        <Name>Data formats</Name>
-        <Example>(XML, JSON, YAML etc.)</Example>
-      </Skill>
 
-      <Skill>
-        <Name>Experience with high-end graphics cards, displays and projectors</Name>
-      </Skill>
-    </OtherComputerSkills>
-  </TechnicalSkills>
+        <!--  Application Skills  -->
+        <Applications>
+            <Skill>
+                <Name>TouchDesigner</Name>
+            </Skill>
 
-  <RelevantExperience>
-    <Position>
-      <Title>Software Engineer</Title>
-      <Company>The Madison Square Garden Company</Company>
-      <Location>
-        <City>San Francisco</City>
-        <State>CA</State>
-      </Location>
-      <Dates>
-        <StartDate>May 2018</StartDate>
-        <EndDate>Present</EndDate>
-      </Dates>
-      <Highlights>
-        <Highlight>Joined MSG upon its acquisition of Obscura Digital</Highlight>
-        <Highlight>Work on the content pipeline as well as research and development for the MSG sphere</Highlight>
-      </Highlights>
-    </Position>
+            <Skill>
+                <Name>Unity</Name>
+            </Skill>
 
-    <Position>
-      <Title>Software Engineer</Title>
-      <Company>Obscura Digital (Acquired by The Madison Square Garden Company)</Company>
-      <Location>
-        <City>San Francisco</City>
-        <State>CA</State>
-      </Location>
-      <Dates>
-        <StartDate>June 2015</StartDate>
-        <EndDate>May 2018</EndDate>
-      </Dates>
-      <Highlights>
-        <Highlight>Wrote code for some of the biggest interactive installations and audio-visual events in the world</Highlight>
-        <Highlight>Researched new technologies and developed computational photography and video projection tools</Highlight>
-        <Highlight>Worked to improve internal documentation and standardize software development practices</Highlight>
-      </Highlights>
-    </Position>
-    
-    <Position>
-      <Title>Software Engineer</Title>
-      <Company>Madrone Studios</Company>
-      <Location>
-        <City>San Francisco</City>
-        <State>CA</State>
-      </Location>
-      <Dates>
-        <StartDate>March 2014</StartDate>
-        <EndDate>June 2015</EndDate>
-      </Dates>
-      <Highlights>
-        <Highlight>Designed and developed large-scale visual and interactive installations locally and internationally</Highlight>
-        <Highlight>Provided technical guidance during concept design and content creation</Highlight>
-      </Highlights>
-    </Position>
+            <Skill>
+                <Name>Git</Name>
+            </Skill>
+        </Applications>
 
-    <Position>
-      <Title>Software Engineer</Title>
-      <Company>NightWalker Clothing</Company>
-      <Location>
-        <City>Portland</City>
-        <State>OR</State>
-      </Location>
-      <Dates>
-        <StartDate>August 2013</StartDate>
-        <EndDate>March 2014</EndDate>
-      </Dates>
-      <Highlights>
-        <Highlight>Wrote the entire codebase for the company's flagship MEAN stack application</Highlight>
-        <Highlight>Handled all application deployment, monitoring and maintenance</Highlight>
-      </Highlights>
-    </Position>
-  </RelevantExperience>
+        <!--  Other Skills  -->
+        <Other>
+            <Skill>
+                <Name>All operating systems and shells</Name>
+                <Example>(Bash, Powershell etc.)</Example>
+            </Skill>
 
-  <Education>
-    <School>
-      <Name>The University of Southern California</Name>
-      <Degree>M.S. Journalism</Degree>
-      <Graduation>2013</Graduation>
-    </School>
+            <Skill>
+                <Name>Networking, protocols and data formats</Name>
+                <Example>(TCP/IP, MIDI, XML, JSON, etc.)</Example>
+            </Skill>
 
-    <School>
-      <Name>Portland State University</Name>
-      <Degree>B.S. Communication Studies</Degree>
-      <Graduation>2010</Graduation>
-    </School>
-  </Education>
+            <Skill>
+                <Name>High-end graphics cards and projectors</Name>
+            </Skill>
+        </Other>
 
-  <Projects>
-    <Project>Show Control System at AT&amp;T Stadium</Project>
-    <Project>Social Canvas at MGM Cotai</Project>
-    <Project>Architectural Projections at Shantou University</Project>
-  </Projects>
+    </Skills>
 
-  <Interests>
-    <Interest>Travel</Interest>
-    <Interest>Sound synthesis</Interest>
-    <Interest>Pop culture of the 1980s</Interest>
-  </Interests>
+    <!--  Experience  -->
+    <Experience>
+        <Position>
+            <Title>Software Engineer</Title>
+            <Company>The Madison Square Garden Company</Company>
+            <Location>
+                <City>San Francisco</City>
+                <State>CA</State>
+            </Location>
+            <Dates>
+                <StartDate>May 2018</StartDate>
+                <EndDate>Present</EndDate>
+            </Dates>
+            <Highlights>
+                <Highlight>Research and create technical solutions for the new MSG Sphere venue</Highlight>
+                <Highlight>Develop simulation and visualization software used by multiple teams</Highlight>
+                <Highlight>Maintain large, legacy code bases</Highlight>
+            </Highlights>
+        </Position>
+
+        <Position>
+            <Title>Software Engineer</Title>
+            <Company>Obscura Digital (Acquired by MSG)</Company>
+            <Location>
+                <City>San Francisco</City>
+                <State>CA</State>
+            </Location>
+            <Dates>
+                <StartDate>June 2015</StartDate>
+                <EndDate>May 2018</EndDate>
+            </Dates>
+            <Highlights>
+                <Highlight>Engineered software for some of the biggest interactive installations and audio-visual events in the world</Highlight>
+                <Highlight>Developed computational photography and video projection software</Highlight>
+                <Highlight>Worked to improve documentation and software development practices</Highlight>
+            </Highlights>
+        </Position>
+
+        <Position>
+            <Title>Instructional Associate</Title>
+            <Company>Georgia Institute of Technology</Company>
+            <Location>
+                <City>Atlanta</City>
+                <State>GA</State>
+            </Location>
+            <Dates>
+                <StartDate>December 2019</StartDate>
+                <EndDate>August 2020</EndDate>
+            </Dates>
+            <Highlights>
+                <Highlight>Assisted in teaching a graduate-level course on computer networking</Highlight>
+                <Highlight>Developed new course material and conducted live office hours with students</Highlight>
+            </Highlights>
+        </Position>
+
+        <Position>
+            <Title>Software Engineer</Title>
+            <Company>Madrone Studios</Company>
+            <Location>
+                <City>San Francisco</City>
+                <State>CA</State>
+            </Location>
+            <Dates>
+                <StartDate>March 2014</StartDate>
+                <EndDate>June 2015</EndDate>
+            </Dates>
+            <Highlights>
+                <Highlight>Designed and developed large-scale visual and interactive installations locally and internationally</Highlight>
+                <Highlight>Provided technical guidance during concept design and content creation</Highlight>
+            </Highlights>
+        </Position>
+
+        <Position>
+            <Title>Software Engineer</Title>
+            <Company>NightWalker Clothing</Company>
+            <Location>
+                <City>Portland</City>
+                <State>OR</State>
+            </Location>
+            <Dates>
+                <StartDate>August 2013</StartDate>
+                <EndDate>March 2014</EndDate>
+            </Dates>
+            <Highlights>
+                <Highlight>Wrote the entire codebase for the company's flagship MEAN stack application</Highlight>
+                <Highlight>Handled all application deployment, monitoring and maintenance</Highlight>
+            </Highlights>
+        </Position>
+    </Experience>
 
 </Resume>
