@@ -130,9 +130,10 @@ body {
     content: "E: ";
 }
 
-/*.phone::before {*/
-/*    content: "C: ";*/
-/*}*/
+.phone::before {
+    /*content: "C: ";*/
+}
+
 
 /* Hide extra text when printing */
 @page {
