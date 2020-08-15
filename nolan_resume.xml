@@ -31,7 +31,7 @@
             <Street></Street>
             <City>Los Angeles</City>
             <State>CA</State>
-            <Zip>94110</Zip>
+            <Zip>90048</Zip>
         </Address>
     </Contact>
 
@@ -41,30 +41,30 @@
             <Name>Georgia Institute of Technology</Name>
             <Degree>M.S. Computer Science</Degree>
             <Graduation>2020</Graduation>
-            <Summary>
-                Specialization in Computational Perception and Robotics.
-                Studied machine learning and computer vision as it applies to robotics, signal processing,
-                finance and art.
-            </Summary>
+            <Highlights>
+                <Highlight>Specialization in Computational Perception and Robotics</Highlight>
+                <Highlight>Studied machine learning and computer vision as it applies to robotics, signal processing,
+                finance and art</Highlight>
+            </Highlights>
         </School>
 
         <School>
             <Name>The University of Southern California</Name>
             <Degree>M.S. Journalism</Degree>
             <Graduation>2013</Graduation>
-            <Summary>
-                Specialization in Broadcast and Digital Journalism.
-                Made extensive use of web technologies for journalism.
-            </Summary>
+            <Highlights>
+                <Highlight>Specialization in Broadcast and Digital Journalism</Highlight>
+                <Highlight>Made extensive use of web technologies for journalism</Highlight>
+            </Highlights>
         </School>
 
         <School>
             <Name>Portland State University</Name>
             <Degree>B.S. Communication Studies</Degree>
             <Graduation>2010</Graduation>
-            <Summary>
-                Studied social media and emerging communication technology.
-            </Summary>
+            <Highlights>
+                <Highlight>Studied social media and emerging communication technology</Highlight>
+            </Highlights>
         </School>
     </Education>
 
@@ -131,7 +131,7 @@
     <Experience>
         <Position>
             <Title>Software Engineer</Title>
-            <Company>The Madison Square Garden Company</Company>
+            <Company>The Madison Square Garden Company (MSG)</Company>
             <Location>
                 <City>San Francisco</City>
                 <State>CA</State>

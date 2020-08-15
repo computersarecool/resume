@@ -211,9 +211,15 @@
                     <xsl:value-of select="Graduation/text()"/>
                 </p>
 
-                <p>
-                    <xsl:value-of select="Summary/text()"/>
-                </p>
+                <xsl:for-each select="Highlights">
+                    <ul>
+                        <xsl:for-each select="Highlight">
+                            <li class="education-highlight">
+                                <xsl:value-of select="text()"/>
+                            </li>
+                        </xsl:for-each>
+                    </ul>
+                </xsl:for-each>
             </aside>
         </xsl:for-each>
     </xsl:template>
@@ -230,7 +236,7 @@
         </ul>
 
         <p class="list-annotate">
-            These and other projects and research that can be shared publicly are documented at <a href="www.willynolan.com">willynolan.com</a>
+            These and other projects and research that can be shared publicly are documented at <a href="https://willynolan.com">willynolan.com</a>
         </p>
 
     </xsl:template>
