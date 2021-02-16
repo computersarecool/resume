@@ -63,7 +63,7 @@
             <Degree>B.S. Communication Studies</Degree>
             <Graduation>2010</Graduation>
             <Highlights>
-                <Highlight>Studied social media and emerging communication technology</Highlight>
+                <Highlight>Studied social media web technologies for communication</Highlight>
             </Highlights>
         </School>
     </Education>
@@ -133,7 +133,7 @@
             <Title>Software Engineer</Title>
             <Company>The Madison Square Garden Company (MSG)</Company>
             <Location>
-                <City>San Francisco</City>
+                <City>Los Angeles</City>
                 <State>CA</State>
             </Location>
             <Dates>
@@ -141,8 +141,8 @@
                 <EndDate>Present</EndDate>
             </Dates>
             <Highlights>
-                <Highlight>Research and create technical solutions for the new MSG Sphere venue</Highlight>
-                <Highlight>Develop simulation and visualization software used by multiple teams</Highlight>
+                <Highlight>Develop simulation and visualization software used internally and externally</Highlight>
+                <Highlight>Research and implement technical solutions for the new MSG Sphere venue</Highlight>
                 <Highlight>Maintain large, legacy code bases</Highlight>
             </Highlights>
         </Position>
@@ -177,7 +177,7 @@
                 <EndDate>August 2020</EndDate>
             </Dates>
             <Highlights>
-                <Highlight>Assisted in teaching a graduate-level course on computer networking</Highlight>
+                <Highlight>Assisted in teaching a graduate-level course covering Python development and computer networking</Highlight>
                 <Highlight>Developed new course material and conducted live office hours with students</Highlight>
             </Highlights>
         </Position>

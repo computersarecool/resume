@@ -17,7 +17,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     --secondary-font-color: #525252;
     --date-space: .6ch;
     --section-margin-bottom: 9pt;
-    --in-section-margin-bottom: 4.5pt;
+    --in-section-margin-bottom: 5pt;
+    --in-section-margin-sentence: 3pt;
 }
 
 .no-display {
@@ -100,8 +101,13 @@ body {
 .school, .multi-element {
     margin-bottom: var(--section-margin-bottom);
 }
+
 .work-location, .degree {
      margin-bottom: var(--in-section-margin-bottom);
+}
+
+.education-highlight, .job-highlight {
+    margin-bottom: var(--in-section-margin-sentence);
 }
 
 .styled-list {
