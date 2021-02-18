@@ -156,12 +156,21 @@
         <h1 class="heading"><xsl:value-of select ="name(.)"/></h1>
         <xsl:for-each select="Position">
             <aside class="multi-element">
+                <xsl:if test="PositionType">
+                    <xsl:attribute name="class">
+                        <xsl:value-of select="PositionType/text()"/>
+                    </xsl:attribute>
+                </xsl:if>
+
                 <h2 class="second-heading">
                     <xsl:value-of select="Title/text()"/>
                 </h2>
 
                 <p>
                     <xsl:value-of select="Company/text()"/>
+                    <xsl:if test="CompanyNotes">
+                        <span class="work-notes"><xsl:value-of select="CompanyNotes/text()"/></span>
+                    </xsl:if>
                 </p>
 
                 <p class="work-location">

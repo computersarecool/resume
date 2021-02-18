@@ -15,10 +15,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 :root {
     --main-font-color: #616161;
     --secondary-font-color: #525252;
-    --date-space: .6ch;
+    --date-space: 5pt;
     --section-margin-bottom: 9pt;
     --in-section-margin-bottom: 5pt;
     --in-section-margin-sentence: 3pt;
+    --main-template-columns: 0 2.55fr 3fr 3fr 0;
+    --main-grid-column-gap: 2.25em;
 }
 
 .no-display {
@@ -43,9 +45,9 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: var(--main-font-color);
     display: grid;
-    grid-template-columns: 0 repeat(3, 1fr) 0;
+    grid-template-columns: var(--main-template-columns);
     grid-template-rows: .4fr repeat(3, 1fr) .4fr;
-    grid-column-gap: 2.25em;
+    grid-column-gap: var(--main-grid-column-gap);
     grid-template-areas:
     ". . . . ."
     ". . experience skills ."
@@ -98,6 +100,11 @@ body {
     margin-right: var(--date-space);
 }
 
+.work-notes {
+    display: inline-block;
+    margin-left: var(--date-space);
+}
+
 .school, .multi-element {
     margin-bottom: var(--section-margin-bottom);
 }
@@ -120,6 +127,10 @@ body {
     margin-top: 3.75pt;
 }
 
+.state-name::after {
+    content: ".";
+}
+
 .city-name::after, .degree-name::after {
     content: ", ";
 }
@@ -136,12 +147,11 @@ body {
     content: "E: ";
 }
 
-.phone::before {
-    /*content: "C: ";*/
+.education-position {
+    display: none;
 }
 
-
-/* Hide extra text when printing */
+/* Hide system text when printing */
 @page {
     size: auto;
     margin: 0;
@@ -184,9 +194,9 @@ body {
 
 @media only screen and (min-width: 950px) {
     body {
-        grid-template-columns: 0 repeat(3, 1fr) 0;
+        grid-template-columns: var(--main-template-columns);
         grid-template-rows: repeat(2, 1fr) auto;
-        grid-column-gap: 2.25em;
+        grid-column-gap: var(--main-grid-column-gap);
         grid-template-areas:
         ". . experience skills ."
         ". about experience education ."

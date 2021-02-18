@@ -4,8 +4,8 @@
 <Resume>
     <!--  Personal Summary  -->
     <Summary>
-        I am Software Engineer who has worked on a variety of projects all over the world.
-        My passions include computational perception and robotics and making things work.
+        I am an experienced Software Engineer who has worked on a variety of codebases for projects deployed all over the world.
+        My passions include computational perception and robotics, helping teams of any size succeed and making things work.
     </Summary>
 
     <!--  Interests  -->
@@ -63,7 +63,7 @@
             <Degree>B.S. Communication Studies</Degree>
             <Graduation>2010</Graduation>
             <Highlights>
-                <Highlight>Studied social media web technologies for communication</Highlight>
+                <Highlight>Studied social media and web technologies and how they relate to communication</Highlight>
             </Highlights>
         </School>
     </Education>
@@ -91,7 +91,6 @@
                 <Name>HTML and CSS</Name>
             </Skill>
         </Software>
-
 
         <!--  Application Skills  -->
         <Applications>
@@ -141,15 +140,17 @@
                 <EndDate>Present</EndDate>
             </Dates>
             <Highlights>
-                <Highlight>Develop simulation and visualization software used internally and externally</Highlight>
-                <Highlight>Research and implement technical solutions for the new MSG Sphere venue</Highlight>
-                <Highlight>Maintain large, legacy code bases</Highlight>
+                <Highlight>Develop simulation and visualization software for multiple platforms including multiple VR environments</Highlight>
+                <Highlight>Research and create technical solutions for the new MSG Sphere venue</Highlight>
+                <Highlight>Maintain large, legacy code bases and provide direct support to users</Highlight>
+                <Highlight>Implement algorithms and new techniques in code</Highlight>
             </Highlights>
         </Position>
 
         <Position>
             <Title>Software Engineer</Title>
-            <Company>Obscura Digital (Acquired by MSG)</Company>
+            <Company>Obscura Digital</Company>
+            <CompanyNotes>(Acquired by MSG)</CompanyNotes>
             <Location>
                 <City>San Francisco</City>
                 <State>CA</State>
@@ -160,12 +161,14 @@
             </Dates>
             <Highlights>
                 <Highlight>Engineered software for some of the biggest interactive installations and audio-visual events in the world</Highlight>
-                <Highlight>Developed computational photography and video projection software</Highlight>
+                <Highlight>Developed math-intensive computational photography and video projection software</Highlight>
+                <Highlight>Managed the development of a variety of software applications in multiple languages</Highlight>
                 <Highlight>Worked to improve documentation and software development practices</Highlight>
             </Highlights>
         </Position>
 
         <Position>
+            <PositionType>education-position</PositionType>
             <Title>Instructional Associate</Title>
             <Company>Georgia Institute of Technology</Company>
             <Location>
@@ -195,6 +198,7 @@
             </Dates>
             <Highlights>
                 <Highlight>Designed and developed large-scale visual and interactive installations locally and internationally</Highlight>
+                <Highlight>Created custom user-facing applications on short timelines</Highlight>
                 <Highlight>Provided technical guidance during concept design and content creation</Highlight>
             </Highlights>
         </Position>
@@ -213,6 +217,7 @@
             <Highlights>
                 <Highlight>Wrote the entire codebase for the company's flagship MEAN stack application</Highlight>
                 <Highlight>Handled all application deployment, monitoring and maintenance</Highlight>
+                <Highlight>Established code best practices and documentation guidelines for a software development team</Highlight>
             </Highlights>
         </Position>
     </Experience>
