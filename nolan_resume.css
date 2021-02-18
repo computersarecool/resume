@@ -131,6 +131,10 @@ body {
     content: ".";
 }
 
+.mail-state::after {
+    content: "";
+}
+
 .city-name::after, .degree-name::after {
     content: ", ";
 }

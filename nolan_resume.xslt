@@ -50,7 +50,7 @@
                     <xsl:value-of select="Address/City/text()"/>
                 </span>
 
-                <span class="state-name">
+                <span class="state-name mail-state">
                     <xsl:value-of select="Address/State/text()"/>
                 </span>
 
