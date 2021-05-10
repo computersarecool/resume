@@ -66,7 +66,6 @@
             <p class="phone">
                 <xsl:value-of select="Phone/text()"/>
             </p>
-
         </aside>
     </xsl:template>
 
@@ -97,15 +96,15 @@
     <!--  Skills  -->
     <xsl:template match="Skills">
         <h1 class="heading"><xsl:value-of select ="name(.)"/></h1>
-        <xsl:apply-templates select="Software"/>
+        <xsl:apply-templates select="Languages"/>
         <xsl:apply-templates select="Applications"/>
         <xsl:apply-templates select="Other"/>
     </xsl:template>
 
     <!--  Programming Skills  -->
-    <xsl:template match="Software">
+    <xsl:template match="Languages">
         <aside class="multi-element">
-            <h2 class="second-heading"><xsl:value-of select ="name(.)"/></h2>
+            <h2 class="second-heading">Programming <xsl:value-of select ="name(.)"/></h2>
             <ul>
                 <xsl:for-each select="Skill">
                     <li>
@@ -235,7 +234,7 @@
 
     <!--  Projects  -->
     <xsl:template match="Projects">
-        <h1 class="heading"><xsl:value-of select ="name(.)"/></h1>
+        <h1 class="heading">Selected <xsl:value-of select ="name(.)"/></h1>
         <ul class="styled-list">
             <xsl:for-each select="Project">
                 <li>
@@ -247,7 +246,6 @@
         <p class="list-annotate">
             These and other projects and research that can be shared publicly are documented at <a href="https://willynolan.com">willynolan.com</a>
         </p>
-
     </xsl:template>
 
 </xsl:stylesheet>

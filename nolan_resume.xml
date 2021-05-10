@@ -2,40 +2,32 @@
 <?xml-stylesheet type="text/xsl" href="nolan_resume.xslt"?>
 
 <Resume>
-    <!--  Personal Summary  -->
-    <Summary>
-        I am an experienced Software Engineer who has worked on a variety of codebases for projects deployed all over the world.
-        My passions include computational perception and robotics, helping teams of any size succeed and making things work.
-    </Summary>
+    <PersonalSummary>
+        I am an experienced Software Engineer who has worked on a variety of code bases for projects deployed all over the world.
+        My passions include computational perception and robotics, helping teams succeed and making things work.
+    </PersonalSummary>
 
-    <!--  Interests  -->
+    <Contact>
+        <FullName>Willy Nolan</FullName>
+        <Email>willy@willynolan.com</Email>
+        <Address>
+            <City>Los Angeles</City>
+            <State>CA</State>
+        </Address>
+    </Contact>
+
     <Interests>
         <Interest>Sound synthesis</Interest>
         <Interest>Pop culture of the 1980s</Interest>
         <Interest>Travel</Interest>
     </Interests>
 
-    <!--  Projects  -->
     <Projects>
         <Project>Show control system at AT&amp;T Stadium</Project>
         <Project>Social Canvas at MGM Cotai</Project>
         <Project>Video projections at Shantou University</Project>
     </Projects>
 
-    <!--  Contact  -->
-    <Contact>
-        <FullName>Willy Nolan</FullName>
-        <Email>willy@willynolan.com</Email>
-        <Phone></Phone>
-        <Address>
-            <Street></Street>
-            <City>Los Angeles</City>
-            <State>CA</State>
-            <Zip>90048</Zip>
-        </Address>
-    </Contact>
-
-    <!--  Education  -->
     <Education>
         <School>
             <Name>Georgia Institute of Technology</Name>
@@ -69,8 +61,7 @@
     </Education>
 
     <Skills>
-        <!--  Programming Skills  -->
-        <Software>
+        <Languages>
             <Skill>
                 <Name>Python</Name>
             </Skill>
@@ -90,9 +81,8 @@
             <Skill>
                 <Name>HTML and CSS</Name>
             </Skill>
-        </Software>
+        </Languages>
 
-        <!--  Application Skills  -->
         <Applications>
             <Skill>
                 <Name>TouchDesigner</Name>
@@ -107,7 +97,6 @@
             </Skill>
         </Applications>
 
-        <!--  Other Skills  -->
         <Other>
             <Skill>
                 <Name>All operating systems and shells</Name>
@@ -116,17 +105,20 @@
 
             <Skill>
                 <Name>Networking, protocols and data formats</Name>
-                <Example>(TCP/IP, MIDI, XML, JSON, etc.)</Example>
+                <Example>(TCP/IP, MIDI, XML, JSON etc.)</Example>
+            </Skill>
+
+            <Skill>
+                <Name>Software development paradigms</Name>
+                <Example>(Agile / Scrum, Waterfall, Test-driven development etc.)</Example>
             </Skill>
 
             <Skill>
                 <Name>High-end graphics cards and projectors</Name>
             </Skill>
         </Other>
-
     </Skills>
 
-    <!--  Experience  -->
     <Experience>
         <Position>
             <Title>Software Engineer</Title>
@@ -140,15 +132,15 @@
                 <EndDate>Present</EndDate>
             </Dates>
             <Highlights>
-                <Highlight>Develop simulation and visualization software for multiple platforms including multiple VR environments</Highlight>
-                <Highlight>Research and create technical solutions for the new MSG Sphere venue</Highlight>
-                <Highlight>Maintain large, legacy code bases and provide direct support to users</Highlight>
-                <Highlight>Implement algorithms and new techniques in code</Highlight>
+                <Highlight>Develop simulation and visualization software for multiple platforms including VR</Highlight>
+                <Highlight>Review new code contributions for multiple projects to ensure style and best practices are followed</Highlight>
+                <Highlight>Maintain and improve large, legacy code bases while providing direct support to users</Highlight>
+                <Highlight>Architect novel solutions and work with executives during the complete patent application process</Highlight>
             </Highlights>
         </Position>
 
         <Position>
-            <Title>Software Engineer</Title>
+            <Title>Interactive Engineer</Title>
             <Company>Obscura Digital</Company>
             <CompanyNotes>(Acquired by MSG)</CompanyNotes>
             <Location>
@@ -161,9 +153,45 @@
             </Dates>
             <Highlights>
                 <Highlight>Engineered software for some of the biggest interactive installations and audio-visual events in the world</Highlight>
-                <Highlight>Developed math-intensive computational photography and video projection software</Highlight>
+                <Highlight>Developed computational photography and video projection software for creative use cases</Highlight>
                 <Highlight>Managed the development of a variety of software applications in multiple languages</Highlight>
-                <Highlight>Worked to improve documentation and software development practices</Highlight>
+                <Highlight>Improved internal documentation and software development practices</Highlight>
+            </Highlights>
+        </Position>
+
+        <Position>
+            <Title>Software Engineer &amp; Creative Technologist</Title>
+            <Company>Madrone Studios</Company>
+            <Location>
+                <City>San Francisco</City>
+                <State>CA</State>
+            </Location>
+            <Dates>
+                <StartDate>March 2014</StartDate>
+                <EndDate>June 2015</EndDate>
+            </Dates>
+            <Highlights>
+                <Highlight>Designed and developed large-scale visual and interactive installations locally and internationally</Highlight>
+                <Highlight>Created custom user-facing applications on short timelines</Highlight>
+                <Highlight>Worked closely with creative directors to provide technical guidance for events and concept design</Highlight>
+            </Highlights>
+        </Position>
+
+        <Position>
+            <Title>Software Engineer</Title>
+            <Company>NightWalker Clothing</Company>
+            <Location>
+                <City>Portland</City>
+                <State>OR</State>
+            </Location>
+            <Dates>
+                <StartDate>August 2013</StartDate>
+                <EndDate>March 2014</EndDate>
+            </Dates>
+            <Highlights>
+                <Highlight>Wrote the entire code base for the company's flagship MEAN stack application</Highlight>
+                <Highlight>Handled all application deployment, monitoring and maintenance</Highlight>
+                <Highlight>Established engineering and documentation best practices for a new development team</Highlight>
             </Highlights>
         </Position>
 
@@ -186,40 +214,40 @@
         </Position>
 
         <Position>
-            <Title>Software Engineer</Title>
-            <Company>Madrone Studios</Company>
+            <PositionType>education-position</PositionType>
+            <Title>Instructional Associate</Title>
+            <Company>Georgia Institute of Technology</Company>
             <Location>
-                <City>San Francisco</City>
-                <State>CA</State>
+                <City>Atlanta</City>
+                <State>GA</State>
             </Location>
             <Dates>
-                <StartDate>March 2014</StartDate>
-                <EndDate>June 2015</EndDate>
+                <StartDate>December 2019</StartDate>
+                <EndDate>August 2020</EndDate>
             </Dates>
             <Highlights>
-                <Highlight>Designed and developed large-scale visual and interactive installations locally and internationally</Highlight>
-                <Highlight>Created custom user-facing applications on short timelines</Highlight>
-                <Highlight>Provided technical guidance during concept design and content creation</Highlight>
+                <Highlight>Assisted in teaching a graduate-level course covering Python development and computer networking</Highlight>
+                <Highlight>Developed new course material and conducted live office hours with students</Highlight>
             </Highlights>
         </Position>
 
         <Position>
-            <Title>Software Engineer</Title>
-            <Company>NightWalker Clothing</Company>
+            <PositionType>education-position</PositionType>
+            <Title>Teacher Assistant</Title>
+            <Company>Georgia Institute of Technology</Company>
             <Location>
-                <City>Portland</City>
-                <State>OR</State>
+                <City>Atlanta</City>
+                <State>GA</State>
             </Location>
             <Dates>
-                <StartDate>August 2013</StartDate>
-                <EndDate>March 2014</EndDate>
+                <StartDate>December 2019</StartDate>
+                <EndDate>August 2020</EndDate>
             </Dates>
             <Highlights>
-                <Highlight>Wrote the entire codebase for the company's flagship MEAN stack application</Highlight>
-                <Highlight>Handled all application deployment, monitoring and maintenance</Highlight>
-                <Highlight>Established code best practices and documentation guidelines for a software development team</Highlight>
+                <Highlight>Assisted in teaching a graduate-level course covering Python development and computer networking</Highlight>
+                <Highlight>Developed new course material and conducted live office hours with students</Highlight>
             </Highlights>
         </Position>
-    </Experience>
 
+    </Experience>
 </Resume>
