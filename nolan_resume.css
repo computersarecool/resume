@@ -20,11 +20,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     --in-section-margin-bottom: 5pt;
     --in-section-margin-sentence: 3pt;
     --main-template-columns: 0 2.55fr 3fr 3fr 0;
-    --main-grid-column-gap: 2.25em;
+    --main-grid-column-gap: 2em;
 }
 
 .no-display {
-    display: none;
+    display: none !important;
 }
 
 a {
@@ -147,12 +147,22 @@ body {
     content: ".";
 }
 
-.email::before {
-    content: "E: ";
-}
-
 .education-position {
     display: none;
+}
+
+body > section.about > h1 {
+    font-size: 28pt;
+}
+
+body > section.skills ul li span {
+    display: block;
+    margin-bottom: 4pt;
+}
+
+/* Patent element */
+#miscellaneous + ul li:first-child span:first-child {
+    margin-bottom: 0;
 }
 
 /* Hide system text when printing */
@@ -161,7 +171,7 @@ body {
     margin: 0;
 }
 
-
+/* Screen styles */
 @media screen {
     body {
         margin: 2.5em auto;

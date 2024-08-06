@@ -2,11 +2,13 @@
 <?xml-stylesheet type="text/xsl" href="nolan_resume.xslt"?>
 
 <Resume>
+<!--    Personal Summary    -->
     <PersonalSummary>
         I am an experienced Software Engineer who has worked on a variety of code bases for projects deployed all over the world.
         My passions include computational perception and robotics, helping teams succeed and making things work.
     </PersonalSummary>
 
+<!--    Contact Information    -->
     <Contact>
         <FullName>Willy Nolan</FullName>
         <Email>willy@willynolan.com</Email>
@@ -16,18 +18,21 @@
         </Address>
     </Contact>
 
+<!--    Interests    -->
     <Interests>
-        <Interest>Sound synthesis</Interest>
+        <Interest>Music production</Interest>
+        <Interest>Interaction design</Interest>
         <Interest>Pop culture of the 1980s</Interest>
-        <Interest>Travel</Interest>
     </Interests>
 
+<!--    Projects    -->
     <Projects>
         <Project>Show control system at AT&amp;T Stadium</Project>
         <Project>Social Canvas at MGM Cotai</Project>
         <Project>Video projections at Shantou University</Project>
     </Projects>
 
+<!--    Education    -->
     <Education>
         <School>
             <Name>Georgia Institute of Technology</Name>
@@ -35,7 +40,7 @@
             <Graduation>2020</Graduation>
             <Highlights>
                 <Highlight>Specialization in Computational Perception and Robotics</Highlight>
-                <Highlight>Studied machine learning and computer vision as it applies to robotics, signal processing,
+                <Highlight>Studied machine learning and computer vision as it applies to AI, robotics, signal processing,
                 finance and art</Highlight>
             </Highlights>
         </School>
@@ -60,7 +65,9 @@
         </School>
     </Education>
 
+<!--    Skills    -->
     <Skills>
+    <!--    Language Skills    -->
         <Languages>
             <Skill>
                 <Name>Python</Name>
@@ -75,7 +82,7 @@
             </Skill>
 
             <Skill>
-                <Name>OpenGL and WebGL</Name>
+                <Name>Graphics APIs (OpenGL, WebGL, Vulkan etc.)</Name>
             </Skill>
 
             <Skill>
@@ -83,6 +90,7 @@
             </Skill>
         </Languages>
 
+    <!--    Application Skills    -->
         <Applications>
             <Skill>
                 <Name>TouchDesigner</Name>
@@ -97,7 +105,14 @@
             </Skill>
         </Applications>
 
-        <Other>
+    <!--    Miscellaneous Skills    -->
+        <Miscellaneous>
+            <Skill>
+                <Name>Lead Inventor on US Patents:</Name>
+                <Example>#11727630 and #11961181</Example>
+                <Explanation>(Distance Driven Digital Display Emulation and 3D Image Space Transformation)</Explanation>
+            </Skill>
+
             <Skill>
                 <Name>All operating systems and shells</Name>
                 <Example>(Bash, Powershell etc.)</Example>
@@ -116,33 +131,51 @@
             <Skill>
                 <Name>High-end graphics cards and projectors</Name>
             </Skill>
-        </Other>
+        </Miscellaneous>
     </Skills>
 
+    <!--    Work Experience    -->
     <Experience>
         <Position>
             <Title>Software Engineer</Title>
-            <Company>The Madison Square Garden Company (MSG)</Company>
+            <Company>The Interaction Department</Company>
+            <Location>
+                <City>Los Angeles</City>
+                <State>CA</State>
+            </Location>
+            <Dates>
+                <StartDate>September 2023</StartDate>
+                <EndDate>Present</EndDate>
+            </Dates>
+            <Highlights>
+                <Highlight>Design and develop software solutions for clients in multiple industries</Highlight>
+                <Highlight>Work on new and legacy codebases individually and with other developers</Highlight>
+                <Highlight>Create web, native and embedded solutions for a variety of technical challenges in AI, real estate, entertainment and finance</Highlight>
+            </Highlights>
+        </Position>
+
+        <Position>
+            <Title>Senior Software Engineer</Title>
+            <Company>Sphere Entertainment Co.</Company>
             <Location>
                 <City>Los Angeles</City>
                 <State>CA</State>
             </Location>
             <Dates>
                 <StartDate>May 2018</StartDate>
-                <EndDate>Present</EndDate>
+                <EndDate>September 2023</EndDate>
             </Dates>
             <Highlights>
-                <Highlight>Develop simulation and visualization software for multiple platforms including VR</Highlight>
-                <Highlight>Review new code contributions for multiple projects to ensure style and best practices are followed</Highlight>
-                <Highlight>Maintain and improve large, legacy code bases while providing direct support to users</Highlight>
-                <Highlight>Architect novel solutions and work with executives during the complete patent application process</Highlight>
+                <Highlight>Developed simulation and visualization software for multiple platforms including VR</Highlight>
+                <Highlight>Reviewed new code contributions for multiple projects to ensure best practices and consistent style</Highlight>
+                <Highlight>Maintained and improved large, legacy code bases while providing direct user support</Highlight>
             </Highlights>
         </Position>
 
         <Position>
             <Title>Interactive Engineer</Title>
             <Company>Obscura Digital</Company>
-            <CompanyNotes>(Acquired by MSG)</CompanyNotes>
+            <CompanyNotes>(Acquired by Sphere Co.)</CompanyNotes>
             <Location>
                 <City>San Francisco</City>
                 <State>CA</State>
@@ -178,6 +211,7 @@
         </Position>
 
         <Position>
+            <PositionType>education-position</PositionType>
             <Title>Software Engineer</Title>
             <Company>NightWalker Clothing</Company>
             <Location>
@@ -248,6 +282,5 @@
                 <Highlight>Developed new course material and conducted live office hours with students</Highlight>
             </Highlights>
         </Position>
-
     </Experience>
 </Resume>

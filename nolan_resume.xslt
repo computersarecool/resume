@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+    <xsl:output method="html" doctype-system="about:legacy-compat"/>
     <!--  Root template-->
     <xsl:template match="/">
-        <html>
+        <html lang="en">
             <head>
                 <title>Willy Nolan Resume</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -12,7 +13,7 @@
 
             <body>
                 <section class="about">
-                    <h1 class="heading"><xsl:value-of select="Resume/Contact/FullName/text()"/></h1>
+                    <h1 id="name" class="heading"><xsl:value-of select="Resume/Contact/FullName/text()"/></h1>
                     <xsl:apply-templates select="Resume/Contact"/>
                     <!--  Uncomment to include Personal Summary  -->
                     <!--  <xsl:apply-templates select="Resume/Summary"/>  -->
@@ -40,7 +41,7 @@
 
     <!--  Contact template  -->
     <xsl:template match="Contact">
-        <aside class="multi-element">
+        <aside id="contact-information" class="multi-element">
             <p>
                 <span class="street-name">
                     <xsl:value-of select="Address/Street/text()"/>
@@ -81,7 +82,7 @@
 
     <!--  Interests  -->
     <xsl:template match="Interests">
-        <aside class="interests">
+        <aside id="interests" class="interests">
             <h2 class="second-heading"><xsl:value-of select ="name(.)"/></h2>
             <ul class="styled-list">
                 <xsl:for-each select="Interest">
@@ -95,16 +96,16 @@
 
     <!--  Skills  -->
     <xsl:template match="Skills">
-        <h1 class="heading"><xsl:value-of select ="name(.)"/></h1>
+        <h1 id="skills" class="heading"><xsl:value-of select ="name(.)"/></h1>
         <xsl:apply-templates select="Languages"/>
         <xsl:apply-templates select="Applications"/>
-        <xsl:apply-templates select="Other"/>
+        <xsl:apply-templates select="Miscellaneous"/>
     </xsl:template>
 
     <!--  Programming Skills  -->
     <xsl:template match="Languages">
         <aside class="multi-element">
-            <h2 class="second-heading">Programming <xsl:value-of select ="name(.)"/></h2>
+            <h2 id="programming-languages" class="second-heading">Programming <xsl:value-of select ="name(.)"/></h2>
             <ul>
                 <xsl:for-each select="Skill">
                     <li>
@@ -118,7 +119,7 @@
     <!--  Application Skills  -->
     <xsl:template match="Applications">
         <aside class="multi-element">
-            <h2 class="second-heading"><xsl:value-of select ="name(.)"/></h2>
+            <h2 id="applications" class="second-heading"><xsl:value-of select ="name(.)"/></h2>
             <ul>
                 <xsl:for-each select="Skill">
                     <li>
@@ -129,21 +130,32 @@
         </aside>
     </xsl:template>
 
-    <!--  Other Skills  -->
-    <xsl:template match="Other">
+    <!--  Miscellaneous Skills  -->
+    <xsl:template match="Miscellaneous">
         <aside class="multi-element">
-            <h2 class="second-heading"><xsl:value-of select ="name(.)"/></h2>
+            <h2 id="miscellaneous" class="second-heading"><xsl:value-of select ="name(.)"/></h2>
             <ul>
                 <xsl:for-each select="Skill">
                     <li>
                         <span class="skill-example">
                             <xsl:value-of select="Name/text()"/>
                         </span>
-                        <xsl:for-each select="Example">
-                            <span class="no-display">
-                                <xsl:value-of select="text()"/>
-                            </span>
-                        </xsl:for-each>
+                        <xsl:choose>
+                          <xsl:when test="position()=1">
+                            <xsl:for-each select="Example">
+                                <span>
+                                    <xsl:value-of select="text()"/>
+                                </span>
+                            </xsl:for-each>
+                          </xsl:when>
+                          <xsl:otherwise>
+                            <xsl:for-each select="Example">
+                                <span class="no-display">
+                                    <xsl:value-of select="text()"/>
+                                </span>
+                            </xsl:for-each>
+                          </xsl:otherwise>
+                        </xsl:choose>
                     </li>
                 </xsl:for-each>
             </ul>
@@ -152,7 +164,7 @@
 
     <!--  Experience -->
     <xsl:template match="Experience">
-        <h1 class="heading"><xsl:value-of select ="name(.)"/></h1>
+        <h1 id="experience" class="heading"><xsl:value-of select ="name(.)"/></h1>
         <xsl:for-each select="Position">
             <aside class="multi-element">
                 <xsl:if test="PositionType">
@@ -205,7 +217,7 @@
 
     <!--  Education  -->
     <xsl:template match="Education">
-        <h1 class="heading"><xsl:value-of select ="name(.)"/></h1>
+        <h1 id="education" class="heading"><xsl:value-of select ="name(.)"/></h1>
         <xsl:for-each select="School">
             <aside class="school">
                 <p class="second-heading">
@@ -234,7 +246,7 @@
 
     <!--  Projects  -->
     <xsl:template match="Projects">
-        <h1 class="heading">Selected <xsl:value-of select ="name(.)"/></h1>
+        <h1 id="selected-projects" class="heading">Selected <xsl:value-of select ="name(.)"/></h1>
         <ul class="styled-list">
             <xsl:for-each select="Project">
                 <li>
